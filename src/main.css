@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+.lnk {
+  @apply text-blue-200 font-semibold hover:underline hover:font-bold ease-in-out duration-300;
+}
+@tailwind utilities;
