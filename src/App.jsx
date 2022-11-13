@@ -11,9 +11,9 @@ const App = () => {
     <div>
     <Router>
       <Routes>
-        <Route path="/" element={<Hero/>} />
-        <Route path="/:doc" element={<InfoPage/>}/>
-        {/* <Route path="*" element={<Navigate to="/pydast-docs" replace/>}/> */}
+        <Route path="/pydast-docs" element={<Hero/>} />
+        <Route path="/pydast-docs/:doc" element={<InfoPage/>}/>
+        <Route path="*" element={<Navigate to="/pydast-docs" replace/>}/>
       </Routes>
     </Router>
     </div>

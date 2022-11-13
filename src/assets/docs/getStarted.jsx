@@ -10,13 +10,13 @@ const getStarted = [
     <ul>
       <li className="p-1"> 1. Open the Folder where you have downloaded the Wheel (.whl) File of the package </li>
       <li className="p-1"> 2. Open Powershell or Terminal Window in the Folder </li>
-      <li className="p-1"> 3. Run the following command to install to install the file </li>
+      <li className="p-1"> 3. Run the following command to install the file </li>
     </ul>
     </div>],
   ["shell-block","pip install pydast-0.0.1-py3-none-any.whl"],
   ["break",<div><br/></div>],
   ["subheading", "Importing Module in local python file"],
-  []
+  ["codeblock","import pydast as pds"]
 ]
 
 export default getStarted;

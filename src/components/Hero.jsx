@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Nav,Footer} from './Page_Utilities';
+import { Footer} from './Page_Utilities';
+import { Nav } from './Navbar';
 import bg_hero from '../assets/img/hero_bg.jpg';
 
 const Hero = () => {
@@ -17,9 +18,15 @@ const Hero = () => {
         {/* Hero Section */}
         <div className="flex flex-col select-none px-5 py-6 bg-black text-white mx-2 my-2 mt-16 rounded-lg bg-opacity-70 w-auto h-fit">
 
-          <div className='flex text-7xl md:text-9xl font-sans font-bold justify-center m-3'>
+          <div className='flex text-8xl md:text-9xl font-sans font-bold justify-center m-3'>
             <div className="bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-500 text-transparent">
               Pydast
+            </div>
+          </div>
+
+          <div className='flex text-3xl py-3 px-4 font-mono font-bold uppercase justify-center bg-black text-white rounded-xl'>
+            <div className='text-center'>
+              Python Data Structures
             </div>
           </div>
 
@@ -37,12 +44,12 @@ const Hero = () => {
             to transform for your own use
           </div>
           <Link className="bg-blue-200 text-black hover:bg-black hover:py-3 hover:px-8 hover:text-xl hover:text-white font-bold text-lg m-auto py-2 px-6 rounded-full w-fit ease-in duration-300"
-          to='/Pydast-Docs/getStarted'>
+          to='/pydast-docs/getStarted'>
             Get Started
           </Link>
         </div>
 
-        <Footer className="absolute z-10 bottom-0"/>
+        <Footer title="Hero" />
         
       </div>
     </div>
