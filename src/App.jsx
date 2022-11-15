@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 
 import Hero from "./components/Hero";
@@ -7,8 +7,9 @@ import InfoPage from "./components/InfoPage";
 import './main.css'
 
 const App = () => {
+
   return (
-    <div>
+    <div className='relative'>
     <Router>
       <Routes>
         <Route path="/pydast-docs" element={<Hero/>} />

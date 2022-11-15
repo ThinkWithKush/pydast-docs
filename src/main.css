@@ -3,4 +3,11 @@
 .lnk {
   @apply text-blue-200 font-semibold hover:underline hover:font-bold ease-in-out duration-300;
 }
+.code {
+  @apply font-mono font-semibold;
+}
 @tailwind utilities;
+
+::selection{
+  @apply bg-blue-900;
+}

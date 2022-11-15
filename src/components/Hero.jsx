@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Footer} from './Page_Utilities';
-import { Nav } from './Navbar';
+import { Nav, Footer} from './Page_Utilities';
 import bg_hero from '../assets/img/hero_bg.jpg';
 
 const Hero = () => {
@@ -16,17 +15,17 @@ const Hero = () => {
         <Nav title="Hero"/>
 
         {/* Hero Section */}
-        <div className="flex flex-col select-none px-5 py-6 bg-black text-white mx-2 my-2 mt-16 rounded-lg bg-opacity-70 w-auto h-fit">
+        <div className="flex flex-col select-none px-5 py-6 bg-black text-white mx-2 my-2 mt-16 rounded-lg bg-opacity-60 backdrop-blur-md w-auto h-fit">
 
           <div className='flex text-8xl md:text-9xl font-sans font-bold justify-center m-3'>
-            <div className="bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-500 text-transparent">
+            <div className="bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 text-transparent">
               Pydast
             </div>
           </div>
 
-          <div className='flex text-3xl py-3 px-4 font-mono font-bold uppercase justify-center bg-black text-white rounded-xl'>
+          <div className='flex text-3xl py-3 px-4 font-mono font-bold justify-center bg-black text-white rounded-xl'>
             <div className='text-center'>
-              Python Data Structures
+              a DATA STRUCTURES library
             </div>
           </div>
 
@@ -40,10 +39,9 @@ const Hero = () => {
             <span className='font-bold text-blue-400 text-xl uppercase'> Data Structures </span> 
             with high
             <span className='font-bold text-blue-400 text-xl uppercase'> flexibility </span>
-             
             to transform for your own use
           </div>
-          <Link className="bg-blue-200 text-black hover:bg-black hover:py-3 hover:px-8 hover:text-xl hover:text-white font-bold text-lg m-auto py-2 px-6 rounded-full w-fit ease-in duration-300"
+          <Link className="bg-blue-200 text-black hover:bg-black hover:py-4 hover:px-10 hover:text-2xl hover:text-white hover:font-mono font-bold text-lg m-auto py-2 px-6 rounded-full w-fit ease-in duration-300"
           to='/pydast-docs/getStarted'>
             Get Started
           </Link>
