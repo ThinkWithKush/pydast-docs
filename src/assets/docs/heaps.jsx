@@ -31,7 +31,8 @@ const heaps = [
   ["highlight","Only comparable values should be added to the heap. In cases of uncomparable values, erros might occur"],
   ["text",<strong>Push</strong>],
   ["text","Pushing is simply adding a value to the Heap"],
-  ["text",""]
+  ["text",<strong>Pop</strong>],
+  ["text","Taking the Highest Priority Value out of the tree"]
 ]
 
 export default heaps;

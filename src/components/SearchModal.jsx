@@ -50,6 +50,7 @@ const SearchModal = (props) => {
       if (!props.search[0]){
         setSearch(true)
       }
+      console.log("Done")
     }
     if (event.key=='Escape'){
       event.preventDefault();
