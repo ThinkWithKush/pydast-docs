@@ -1,7 +1,7 @@
 const structure_table = {
   header:["Structure","Info"],
   body:[
-    ["Heap","Keeping track of the smallest data objects"],
+    ["Priority Queue","Keeps track of lowest priority data objects"],
     ["Trie","Storing and searching strings"]
   ]
 }

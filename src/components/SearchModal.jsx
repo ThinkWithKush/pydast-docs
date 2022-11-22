@@ -16,8 +16,13 @@ const SearchBox = (props) => {
 
   const handleChange = (event) =>{
     const currvalue = event.target.value;
-    if (["heaps","tries","structures"].includes(currvalue.toLowerCase())){
-      navigate("/pydast-docs/"+currvalue.toLowerCase())
+    if (["priority","disjoint","home","tries","structures"].includes(currvalue.toLowerCase())){
+      if (currvalue.toLowerCase()=="home"){
+        navigate("/pydast-docs/")
+      }
+      else{
+        navigate("/pydast-docs/"+currvalue.toLowerCase())
+      }
       setSearch(false)
     }
     setValue(event.target.value)

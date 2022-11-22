@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { Nav, Footer, Table, Sidebar } from './Page_Utilities';
 import { Prism } from '@mantine/prism';
 import PageData from '../assets/data';
+import NotFound from './NotFound';
 
 const InfoPage = (props) => {
 
   let title = useParams()["doc"];
   const data = PageData[title];
+  if (data==undefined){
+    return (
+      <NotFound/>
+    )
+  }
   const keys= Object.keys(PageData);
   const [menu, setMenu] = useState(window.innerWidth>640);
   const index = keys.indexOf(title);
@@ -37,7 +43,7 @@ const InfoPage = (props) => {
                 return (
                 (style==="page-title")?<div key={i} className="font-sans font-bold text-4xl m-2">{text}</div>:
                 (style==="highlight")?<div key={i} className='border-l-4 border-blue-500 bg-slate-300 m-2 ml-5 text-black italic px-2 py-1.5 text-sm'>{text}</div>:
-                (style==="subheading")?<div key={i} className="font-sans font-semibold text-xl m-2 text-blue-200 capitalize">{text}</div>:
+                (style==="subheading")?<div key={i} className="font-sans font-semibold text-2xl m-2 text-blue-200 capitalize">{text}</div>:
                 (style==="text")?<div key={i} className="select-text font-sans md:ml-5 m-2 text-sm text-white">{text}</div>:
                 (style==="codeblock")?<Prism key={i} className="m-2 selection:bg-black text-white" withLineNumbers colorScheme='dark' language="python">{text}</Prism>:
                 (style==="shell-block")?<Prism key={i} className="m-2" colorScheme='dark' language="bash">{text}</Prism>:
